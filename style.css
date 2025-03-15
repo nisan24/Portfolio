@@ -6,42 +6,77 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(135deg, #414040, #333);
-    padding: 12px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #343a40, #2f2f2f);
+    padding: 16px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.navbar:hover {
+    background: linear-gradient(135deg, #2f2f2f, #343a40);
 }
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
-    letter-spacing: 1px;
-    color: cornsilk !important;
+    letter-spacing: 1.2px;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #2c2c2c;
 }
 
 .navbar-nav {
     margin: auto;
+    font-size: 18px;
 }
 
 .navbar-nav .nav-item {
-    margin: 0 15px;
+    margin: 0 18px;
 }
 
 .navbar-nav .nav-link {
     font-size: 18px;
     font-weight: 500;
     color: white !important;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 4px;
     transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffcc00 !important;
-    transform: scale(1.1);
+    color: #5078e7 !important;
+    background-color: rgba(108, 108, 107, 0.2);
+    transform: scale(1.05);
 }
 
 .navbar-toggler {
     border: none;
     background-color: transparent;
 }
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .navbar-nav {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 12px;
+    }
+
+}
+
 
 
 #hero {
@@ -116,7 +151,8 @@ body {
     }
 
     .hero-image {
-        max-width: 200px;
+        max-width: 250px;
+        margin-top: 50px;
     }
 }
 
@@ -250,7 +286,7 @@ body {
     .profile-btn {
         font-size: 0.9rem;
     }
-    
+
 }
 
 /* =================== */
@@ -360,7 +396,8 @@ body {
         margin-left: 0;
         margin-bottom: 10px;
     }
-    .project-card{
+
+    .project-card {
         margin-bottom: 20px;
     }
 }
