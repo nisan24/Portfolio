@@ -1,385 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nisan Hossain - Software Engineer (Backend)</title>
 
-    <meta name="description" content="Hi, I'm Nisan Hossain — a passionate Software Engineer (Backend) skilled in Python, Django, MySQL, REST API, HTML, CSS. Explore my projects, skills, and contact info.">
+    <meta
+      name="description"
+      content="Hi, I'm Nisan Hossain — a passionate Software Engineer (Backend) skilled in Python, Django, MySQL, REST API, HTML, CSS. Explore my projects, skills, and contact info."
+    />
 
-    <meta name="keywords" content="Nisan Hossain, nisan24, nisan24x, Software Engineer Bangladesh, Backend Developer, Django Developer, Python Developer, Portfolio">
+    <meta
+      name="keywords"
+      content="Nisan Hossain, nisan24, nisan24x, Software Engineer Bangladesh, Backend Developer, Django Developer, Python Developer, Portfolio"
+    />
 
     <meta name="author" content="Nisan Hossain" />
     <link rel="canonical" href="https://nisan24.vercel.app" />
-    <meta property="og:title" content="Nisan Hossain | Software Engineer (Backend)" />
-    <meta property="og:description" content="Portfolio of Software Engineer (Backend) & Django Developer, Nisan Hossain." />
+    <meta
+      property="og:title"
+      content="Nisan Hossain | Software Engineer (Backend)"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Software Engineer (Backend) & Django Developer, Nisan Hossain."
+    />
     <meta property="og:image" content="./img/picture_1.jpg" />
     <meta property="og:url" content="https://nisan24.vercel.app" />
 
-    <meta name="google-site-verification" content="B3KzFJ_7M-e54IIDcfVoTSsY-Cc9pXS15Xx1IodDe2c" />
+    <meta
+      name="google-site-verification"
+      content="B3KzFJ_7M-e54IIDcfVoTSsY-Cc9pXS15Xx1IodDe2c"
+    />
 
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/nisan_.png" />
+  </head>
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">NISAN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="/">NISAN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-
-    <section id="hero" class="container d-flex align-items-center justify-content-center text-center text-md-left">
-        <div class="row w-100 align-items-center">
-            <div class="col-md-6 text-center">
-                <h1 class="hero-title">I'm <span class="highlight">Nisan Hossain</span></h1>
-                <p class="hero-subtitle">Software Engineer & Python Developer</p>
-                <p class="hero-desc">I'm a passionate Computer Science student focusing on algorithms, scalable backend
-                    solutions, and building robust web applications with Python and Django. 🚀</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg">Let's Talk</a>
-                    <a href="./img/nisan-resume.pdf" class="btn btn-outline-primary btn-lg" target="_blank">
-                        <i class="fa fa-download me-2"></i> Get Resume
-                    </a>
-                </div>
-                <div class="social-icons mt-4">
-                    <a href="https://www.facebook.com/nisan24x" target="_blank" class="me-3"><i
-                            class="fab fa-facebook fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/nisanhossain" target="_blank" class="me-3"><i
-                            class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="https://github.com/nisan24" target="_blank" class="me-3"><i
-                            class="fab fa-github fa-2x"></i></a>
-                    <a href="mailto:nisanhossain76@gmail.com" class="me-3"><i class="fas fa-envelope fa-2x"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="./img/picture_1.jpg" alt="Nisan Hossain" class="hero-image rounded-circle img-fluid">
-            </div>
+    <section
+      id="hero"
+      class="container d-flex align-items-center justify-content-center text-center text-md-left"
+    >
+      <div class="row w-100 align-items-center">
+        <div class="col-md-6 text-center">
+          <h1 class="hero-title">
+            I'm <span class="highlight">Nisan Hossain</span>
+          </h1>
+          <p class="hero-subtitle">Software Engineer & Python Developer</p>
+          <p class="hero-desc">
+            I'm a passionate Computer Science student focusing on algorithms,
+            scalable backend solutions, and building robust web applications
+            with Python and Django. 🚀
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg">Let's Talk</a>
+            <a
+              href="./img/nisan-resume.pdf"
+              class="btn btn-outline-primary btn-lg"
+              target="_blank"
+            >
+              <i class="fa fa-download me-2"></i> Get Resume
+            </a>
+          </div>
+          <div class="social-icons mt-4">
+            <a
+              href="https://www.facebook.com/nisan24x"
+              target="_blank"
+              class="me-3"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nisanhossain"
+              target="_blank"
+              class="me-3"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a href="https://github.com/nisan24" target="_blank" class="me-3"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a href="mailto:nisanhossain76@gmail.com" class="me-3"
+              ><i class="fas fa-envelope fa-2x"></i
+            ></a>
+          </div>
         </div>
+        <div class="col-md-6 text-center">
+          <img
+            src="./img/picture_1.jpg"
+            alt="Nisan Hossain"
+            class="hero-image rounded-circle img-fluid"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- ======== -->
-
     <section id="about" class="about-section py-5">
-        <div class="container py-5">
-            <h2 class="section-title text-center mb-4 fw-bold">About Me</h2>
-            <p class="lead">I am Nisan Hossain, a passionate web developer with a focus on building dynamic and
-                responsive websites. My goal is to create user-friendly digital experiences that help businesses thrive
-                in the digital age.</p>
-            <p>With a background in backend development, I am skilled in technologies like Django, React, and
-                JavaScript. I am constantly learning new techniques and tools to stay on top of industry trends.</p>
-            <p>Feel free to reach out for collaborations, projects, or just a friendly conversation about web
-                development!</p>
+      <div class="container py-5">
+        <h2 class="about-section-title text-center mb-4 fw-bold">About Me</h2>
+
+        <div class="about-content mx-auto">
+          <p class="lead">
+            I’m <strong>Nisan Hossain</strong>, a backend-focused software
+            developer with hands-on experience in building scalable web
+            applications using <strong>Python</strong> and the
+            <strong>Django REST Framework (DRF)</strong>. I enjoy designing
+            reliable backend systems, writing clean code, and solving complex
+            real-world problems with efficient solutions.
+          </p>
+
+          <p>
+            I have a strong foundation in <strong>C</strong>,
+            <strong>C++ (DSA)</strong>, <strong>Python (OOP)</strong>,
+            <strong>MySQL</strong>, and modern web technologies. My work
+            revolves around backend development, API design, secure
+            authentication, and database-driven application architecture.
+          </p>
+
+          <p>
+            I’ve solved <strong>820+ problems</strong> across multiple
+            competitive programming platforms — including
+            <strong>Codeforces (420+ solved, Max Rating: 1062)</strong>,
+            <strong>LeetCode (150+ solved)</strong>,
+            <strong>CodeChef (2★, Highest Rating: 1441)</strong>,
+            <strong>Vjudge (135+ topic & contest problems)</strong>, and
+            <strong>HackerRank</strong>. These challenges strengthened my
+            analytical ability, problem-solving mindset, and logical thinking.
+          </p>
+
+          <p>
+            I’m dedicated to writing maintainable, scalable, and efficient code,
+            while constantly learning new tools, patterns, and technologies that
+            enhance product quality and overall system performance.
+          </p>
+
+          <p class="mb-0">
+            Always open to collaboration, backend projects, or meaningful
+            discussions about software engineering!
+          </p>
         </div>
+      </div>
     </section>
 
+    <!-- Skills Section -->
 
-    <section id="skills" class="container">
-        <h2 class="mb-5 text-center fw-bold">Technical Skills</h2>
-        <div class="row m-4 justify-content-center">
-            <!-- Programming Languages -->
-            <div class="col-md-4 mb-4">
-                <div class="skill-card">
-                    <div class="skill-item">
-                        <i class="fas fa-code"></i>
-                        <span>Programming Languages</span>
-                    </div>
-                    <hr>
-                    <ul>
-                        <li>C</li>
-                        <li>C++ (with CP)</li>
-                        <li>Python (OOP)</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
+    <section id="about" class="about-section py-2">
+      <div class="container py-2">
+        <h2 class="about-section-title text-center mb-5 fw-bold">
+          Technical Skills
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Programming Languages -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>Programming Languages</span>
+              </div>
+              <hr />
+              <ul>
+                <li>C</li>
+                <li>C++ (Data Structures & CP)</li>
+                <li>Python (OOP, Automation)</li>
+                <li>Java (Basic OOP)</li>
+                <li>JavaScript (ES6+)</li>
+              </ul>
             </div>
-            <!-- Frameworks & Libraries -->
-            <div class="col-md-4 mb-4">
-                <div class="skill-card">
-                    <div class="skill-item">
-                        <i class="fas fa-laptop-code"></i>
-                        <span>Frameworks & Libraries</span>
-                    </div>
-                    <hr>
-                    <ul>
-                        <li><strong>Frontend:</strong> Html, CSS, Bootstrap, React.js, JavaScript (ES6+)</li>
-                        <li><strong>Backend:</strong> Python, Django, Django REST Framework (DRF)</li>
-                    </ul>
-                </div>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <div class="skill-item">
+                <i class="fas fa-laptop-code"></i>
+                <span>Frameworks & Libraries</span>
+              </div>
+              <hr />
+              <ul>
+                <li>
+                  <strong>Frontend:</strong> HTML, CSS, Bootstrap, React.js
+                </li>
+                <li><strong>Backend:</strong> Django, DRF, Python</li>
+              </ul>
             </div>
-            <!-- Databases -->
-            <div class="col-md-4 mb-4">
-                <div class="skill-card">
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>Databases</span>
-                    </div>
-                    <hr>
-                    <ul>
-                        <li><strong>ORM:</strong> MySQL, PostgreSQL, Django ORM</li>
-                        <li><strong>NoSQL Databases:</strong> SQLite, Firebase</li>
-                    </ul>
-                </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>Databases</span>
+              </div>
+              <hr />
+              <ul>
+                <li>MySQL, PostgreSQL</li>
+                <li>Django ORM (Expert)</li>
+                <li>SQLite (Local Development)</li>
+              </ul>
             </div>
-            <!-- Tools & Technologies -->
-            <div class="col-md-4 mb-4">
-                <div class="skill-card">
-                    <div class="skill-item">
-                        <i class="fas fa-tools"></i>
-                        <span>Tools & Technologies</span>
-                    </div>
-                    <hr>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Postman</li>
-                        <li>Pycharm</li>
-                    </ul>
-                </div>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <span>Tools & Technologies</span>
+              </div>
+              <hr />
+              <ul>
+                <li>Git, GitHub</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>PyCharm</li>
+                <li>Figma (UI Planning)</li>
+              </ul>
             </div>
-            <!-- Competitive Programming -->
-            <div class="col-md-4 mb-4">
-                <div class="skill-card">
-                    <div class="skill-item">
-                        <i class="fas fa-chess"></i>
-                        <span>Competitive Programming</span>
-                    </div>
-                    <hr>
-                    <ul>
-                        <li>Data Structures (Arrays, Linked Lists, Stacks, Queues, Trees, Graphs)</li>
-                        <li>Algorithms (Sorting, Searching, Greedy, Dynamic Programming, Backtracking)</li>
-                        <li>Graph Algorithms: DFS, BFS, Dijkstra</li>
-                    </ul>
-                </div>
+          </div>
+
+          <!-- Competitive Programming -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <div class="skill-item">
+                <i class="fas fa-chess"></i>
+                <span>Competitive Programming</span>
+              </div>
+              <hr />
+              <ul>
+                <li>Data Structures (Arrays, Trees, Graphs)</li>
+                <li>Algorithms (Greedy, DP, Recursion)</li>
+                <li>Graph Algorithms: BFS, DFS, Dijkstra</li>
+                <li>820+ Problems Solved (CF, LC, CC, VJ)</li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Competitive Programming Section -->
     <section id="cp" class="container text-center mt-5">
-        <h2 class="mb-5 fw-bold">Competitive Programming</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="cp-card">
-                    <h3><i class="fas fa-code"></i> CodeChef
-                        <hr>
-                    </h3>
-                    <p><strong>Rank:</strong> 2-Star</p>
-                    <p><strong>Rating:</strong> 1441</p>
-                    <p><strong>Problems Solved:</strong> 120+</p>
-                    <p class="cp-desc">A 2-Star rank on CodeChef is awarded to those who have consistently solved
-                        problems within time limits, demonstrating proficiency in competitive problem-solving under real
-                        contest conditions.</p>
-                    <a href="https://www.codechef.com/users/nisan24" target="_blank" class="btn btn-dark profile-btn"><i
-                            class="fas fa-user"></i> Profile</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="cp-card">
-                    <h3><i class="fas fa-laptop-code"></i> Codeforces
-                        <hr>
-                    </h3>
-                    <p><strong>Rank:</strong> Newbie</p>
-                    <p><strong>Rating:</strong> 1062</p>
-                    <p><strong>Problems Solved:</strong> 380+</p>
-                    <p class="cp-desc">The "Newbie" rank in Codeforces signifies a beginner's progress, showing that
-                        you're still learning.</p>
-                    <a href="https://codeforces.com/profile/nisan24" target="_blank" class="btn btn-dark profile-btn"><i
-                            class="fas fa-user"></i> Profile</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="cp-card">
-                    <h3><i class="fas fa-database"></i> HackerRank
-                        <hr>
-                    </h3>
-                    <p><strong>Rank:</strong> Gold</p>
-                    <p><strong>Problems Solved:</strong> 100+</p>
-                    <p class="cp-desc">HackerRank's Gold rank represents a top-tier competitive programmer with
-                        consistent performance.</p>
-                    <a href="https://www.hackerrank.com/profile/nisan24" target="_blank"
-                        class="btn btn-dark profile-btn"><i class="fas fa-user"></i> Profile</a>
-                </div>
-            </div>
+      <h2 class="mb-5 fw-bold">Competitive Programming</h2>
+
+      <div class="row g-4">
+        <!-- LeetCode -->
+        <div class="col-md-3">
+          <div class="cp-card">
+            <h3 class="fw-bold">
+              <i class="fas fa-brain"></i> LeetCode
+              <hr />
+            </h3>
+            <p><strong>Track:</strong> Problem Solving</p>
+            <p><strong>Problems Solved:</strong> 160+</p>
+            <p>
+              <strong>Strengths:</strong> Arrays, Strings, HashMap, Two Pointers
+            </p>
+            <p class="cp-desc">
+              Practicing LeetCode daily improves core DSA knowledge and
+              interview problem-solving skills.
+            </p>
+            <a
+              href="https://leetcode.com/nisan24/"
+              target="_blank"
+              class="btn btn-dark profile-btn"
+            >
+              <i class="fas fa-user"></i> Profile
+            </a>
+          </div>
         </div>
+
+        <!-- Codeforces -->
+        <div class="col-md-3">
+          <div class="cp-card">
+            <h3 class="fw-bold">
+              <i class="fas fa-laptop-code"></i> Codeforces
+              <hr />
+            </h3>
+            <p><strong>Rank:</strong> Newbie</p>
+            <p><strong>Rating:</strong> 1062</p>
+            <p><strong>Problems Solved:</strong> 420+</p>
+            <p class="cp-desc">
+              Beginning journey on Codeforces, building speed & accuracy through
+              regular problem solving.
+            </p>
+            <a
+              href="https://codeforces.com/profile/nisan24"
+              target="_blank"
+              class="btn btn-dark profile-btn"
+            >
+              <i class="fas fa-user"></i> Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- CodeChef -->
+        <div class="col-md-3">
+          <div class="cp-card">
+            <h3 class="fw-bold">
+              <i class="fas fa-code"></i> CodeChef
+              <hr />
+            </h3>
+            <p><strong>Rank:</strong> <b>2★</b></p>
+            <p><strong>Rating:</strong> 1441</p>
+            <p><strong>Problems Solved:</strong> 80+</p>
+            <p class="cp-desc">
+              CodeChef 2-Star reflects consistent and accurate problem-solving
+              under contest pressure.
+            </p>
+            <a
+              href="https://www.codechef.com/users/nisan24"
+              target="_blank"
+              class="btn btn-dark profile-btn"
+            >
+              <i class="fas fa-user"></i> Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- HackerRank -->
+        <div class="col-md-3">
+          <div class="cp-card">
+            <h3 class="fw-bold">
+              <i class="fas fa-database"></i> HackerRank
+              <hr />
+            </h3>
+            <p><strong>Rank:</strong> Gold</p>
+            <p><strong>Problems Solved:</strong> 100+</p>
+            <p class="cp-desc">
+              Achieving Gold rank demonstrates strong mastery of core
+              programming challenges.
+            </p>
+            <a
+              href="https://www.hackerrank.com/profile/nisan24"
+              target="_blank"
+              class="btn btn-dark profile-btn"
+            >
+              <i class="fas fa-user"></i> Profile
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="container mt-5">
-        <h2 class="text-center mb-5 fw-bold">🚀 My Projects</h2>
-        <div class="row">
-
-            <!-- StayEase Project -->
-            <div class="col-md-6">
-                <div class="project-card">
-                    <img src="./img/stayease_home.png" class="project-img" alt="StayEase">
-                    <div class="project-content">
-                        <h3><i class="fas fa-bed"></i> StayEase - Hotel Booking</h3>
-                        <p class="project-desc">A modern hotel booking platform where users can explore hotels, view
-                            rooms, check availability, and make bookings.</p>
-                        <h4>🎯 Key Features:</h4>
-                        <ul>
-                            <li>Browse Hotels: Explore a variety of hotels with detailed information.</li>
-                            <li>Room Details: View room types, amenities, and pricing.</li>
-                            <li>Real-Time Availability: See available dates and make bookings easily.</li>
-                            <li>Review System: Rate and review rooms after stay.</li>
-                            <li>Secure Payment: Complete payments securely with multiple options.</li>
-                        </ul>
-                        <h4>🛠️ Used Technologies:</h4>
-                        <div class="tech-list">
-                            <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Python</span>
-                            <span>Django</span> <span>DRF</span> <span>PostgreSQL</span> <span>SQLite</span>
-                            <span>SSLCommerz</span>
-                        </div>
-                        <div class="project-links gap-3">
-                            <a href="https://github.com/nisan24/StayEase-Frontend" class="btn btn-dark"
-                                target="_blank"><i class="fab fa-github"></i> Frontend GitHub</a>
-                            <a href="https://github.com/nisan24/StayEase-DRF" class="btn btn-dark" target="_blank"><i
-                                    class="fab fa-github"></i> Backend GitHub</a>
-                            <a href="https://stayease.vercel.app/" target="_blank" class="btn btn-primary"><i
-                                    class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
+      <h2 class="text-center mb-5 fw-bold">🚀 My Projects</h2>
+      <div class="row">
+        <!-- StayEase Project -->
+        <div class="col-md-6">
+          <div class="project-card">
+            <img
+              src="./img/stayease_home.png"
+              class="project-img"
+              alt="StayEase"
+            />
+            <div class="project-content">
+              <h3><i class="fas fa-bed"></i> StayEase - Hotel Booking</h3>
+              <p class="project-desc">
+                A modern hotel booking platform where users can explore hotels,
+                view rooms, check availability, and make bookings.
+              </p>
+              <h4>🎯 Key Features:</h4>
+              <ul>
+                <li>
+                  Browse Hotels: Explore a variety of hotels with detailed
+                  information.
+                </li>
+                <li>Room Details: View room types, amenities, and pricing.</li>
+                <li>
+                  Real-Time Availability: See available dates and make bookings
+                  easily.
+                </li>
+                <li>Review System: Rate and review rooms after stay.</li>
+                <li>
+                  Secure Payment: Complete payments securely with multiple
+                  options.
+                </li>
+              </ul>
+              <h4>🛠️ Used Technologies:</h4>
+              <div class="tech-list">
+                <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                <span>Python</span> <span>Django</span> <span>DRF</span>
+                <span>PostgreSQL</span> <span>SQLite</span>
+                <span>SSLCommerz</span>
+              </div>
+              <div class="project-links gap-3">
+                <a
+                  href="https://github.com/nisan24/StayEase-Frontend"
+                  class="btn btn-dark"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Frontend GitHub</a
+                >
+                <a
+                  href="https://github.com/nisan24/StayEase-DRF"
+                  class="btn btn-dark"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Backend GitHub</a
+                >
+                <a
+                  href="https://stayease.vercel.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
             </div>
-
-            <!-- Clothify Project -->
-            <div class="col-md-6">
-                <div class="project-card">
-                    <img src="./img/clothify-home.png" class="project-img" alt="Clothify - E-Commerce Platform">
-                    <div class="project-content">
-                        <h3><i class="fas fa-tshirt"></i> Clothify - Fashion E-Commerce</h3>
-                        <p class="project-desc">A scalable and stylish clothing e-commerce platform offering secure
-                            payments and seamless shopping experience.</p>
-                        <h4>🎯 Key Features:</h4>
-                        <ul>
-                            <li>User Panel: Browse fashion collections, add items to wishlist, and checkout.</li>
-                            <li>Product Categories: Wide range of clothing categories, including men, women,
-                                accessories.</li>
-                            <li>Secure Payment: SSLCommerz integration for safe online transactions.</li>
-                            <li>Reviews: Customers can rate and review products.</li>
-                        </ul>
-                        <h4>🛠️ Used Technologies:</h4>
-                        <div class="tech-list mb-3">
-                            <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Python</span>
-                            <span>Django</span> <span>DRF</span> <span>PostgreSQL</span> <span>SSLCommerz</span>
-                        </div>
-                        <div class="project-links gap-3">
-                            <a href="https://github.com/nisan24/Clothify-Frontend" class="btn btn-dark"
-                                target="_blank"><i class="fab fa-github"></i> Frontend GitHub</a>
-                            <a href="https://github.com/nisan24/Clothify_DRF" class="btn btn-dark" target="_blank"><i
-                                    class="fab fa-github"></i> Backend GitHub</a>
-                            <a href="https://clothify-front-end.vercel.app/" target="_blank" class="btn btn-primary"><i
-                                    class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <!-- Clothify Project -->
+        <div class="col-md-6">
+          <div class="project-card">
+            <img
+              src="./img/clothify-home.png"
+              class="project-img"
+              alt="Clothify - E-Commerce Platform"
+            />
+            <div class="project-content">
+              <h3>
+                <i class="fas fa-tshirt"></i> Clothify - Fashion E-Commerce
+              </h3>
+              <p class="project-desc">
+                A scalable and stylish clothing e-commerce platform offering
+                secure payments and seamless shopping experience.
+              </p>
+              <h4>🎯 Key Features:</h4>
+              <ul>
+                <li>
+                  User Panel: Browse fashion collections, add items to wishlist,
+                  and checkout.
+                </li>
+                <li>
+                  Product Categories: Wide range of clothing categories,
+                  including men, women, accessories.
+                </li>
+                <li>
+                  Secure Payment: SSLCommerz integration for safe online
+                  transactions.
+                </li>
+                <li>Reviews: Customers can rate and review products.</li>
+              </ul>
+              <h4>🛠️ Used Technologies:</h4>
+              <div class="tech-list mb-3">
+                <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                <span>Python</span> <span>Django</span> <span>DRF</span>
+                <span>PostgreSQL</span> <span>SSLCommerz</span>
+              </div>
+              <div class="project-links gap-3">
+                <a
+                  href="https://github.com/nisan24/Clothify-Frontend"
+                  class="btn btn-dark"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Frontend GitHub</a
+                >
+                <a
+                  href="https://github.com/nisan24/Clothify_DRF"
+                  class="btn btn-dark"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Backend GitHub</a
+                >
+                <a
+                  href="https://clothify-front-end.vercel.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ====== -->
 
     <section id="contact" class="container mt-5 mb-4">
-        <h2 class="text-center mb-5 fw-bold">Let's Connect</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="contact-form-card p-4">
-                    <form action="#" method="post">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your full name"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Enter the subject"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Your message"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark w-100">Send Message</button>
-                    </form>
-                </div>
-            </div>
+      <h2 class="text-center mb-5 fw-bold">Let's Connect</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="contact-form-card p-4">
+            <form action="#" method="post">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Enter the subject"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row justify-content-center justify-md-between">
-                <div class="col-md-4 mb-2">
-                    <h4 class="fw-bold">About Me</h4>
-                    <p class="footer-text">I am a passionate web developer specializing in full-stack development and
-                        innovative solutions.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h4 class="fw-bold">Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="/" class="footer-link">Home</a></li>
-                        <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
-                        <li><a href="#projects" class="footer-link">Project</a></li>
-                        <li><a href="#contact" class="footer-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h4 class="fw-bold">Contact</h4>
-                    <p class="footer-text">Feel free to get in touch for any collaboration or inquiries.</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-envelope text-white"></i> <a href="mailto:nianhossain76@gmail.com"
-                                class="footer-link">nianhossain76@gmail.com</a></li>
-                        <li><i class="fas fa-phone-alt text-white"></i> <a href="tel:+8801639354216"
-                                class="footer-link">+880 163 935 4216</a></li>
-                        <li><i class="fas fa-map-marker-alt text-white"></i> Dhaka, Bangladesh</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <hr class="border-light">
-                    <p class="footer-text">© 2025 Nisan Hossain. All Rights Reserved.</p>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer class="footer py-5 mt-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- About Section -->
+          <div class="col-md-4 mb-4">
+            <h4 class="footer-title">About Me</h4>
+            <p class="footer-text">
+              Passionate backend-focused developer building fast, scalable, and
+              modern web applications with Python, Django & APIs.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="/" class="footer-link">Home</a></li>
+              <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+              <li><a href="#projects" class="footer-link">Projects</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4">
+            <h4 class="footer-title">Contact</h4>
+            <ul class="footer-list">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:nianhossain76@gmail.com" class="footer-link">
+                  nianhossain76@gmail.com
+                </a>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+8801639354216" class="footer-link">
+                  +880 163 935 4216
+                </a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                Dhaka, Bangladesh
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Bottom -->
+        <div class="text-center">
+          <hr class="footer-divider" />
+          <p class="footer-bottom-text">
+            © 2025 Nisan Hossain. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
-
