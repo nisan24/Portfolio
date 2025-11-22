@@ -157,7 +157,7 @@ body {
 
 /* IMAGE */
 .hero-image {
-  max-width: 320px;
+  max-width: 340px;
   border-radius: 50%;
   border: 8px solid #ffffff;
   display: block;
@@ -222,10 +222,11 @@ body {
   }
 
   .hero-image {
-    max-width: 220px;
+    max-width: 260px;
   }
+
   .hero-image-wrapper {
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   .hero-image-wrapper::after {
