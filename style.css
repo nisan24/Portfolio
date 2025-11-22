@@ -78,14 +78,17 @@ body {
   }
 }
 
+
 /* =-=-=-=-=- */
 #hero {
-  padding: 150px 0;
+  padding: 170px 0;
   background: #f0f4f8;
   /* background: linear-gradient(135deg, #eef2f3, #dde6ed); */
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0 0 15px 15px;
+  margin-top: auto;
 }
 
 .hero-title {
@@ -166,7 +169,7 @@ body {
 }
 
 /* DESKTOP RGB GLOW */
-.hero-image-wrapper::after {
+/* .hero-image-wrapper::after {
   content: "";
   position: absolute;
   top: -18px;
@@ -188,7 +191,6 @@ body {
   filter: blur(18px);
 }
 
-/* RGB Animation */
 @keyframes rgbRotate {
   0% {
     background-position: 0% 50%;
@@ -199,42 +201,123 @@ body {
   100% {
     background-position: 0% 50%;
   }
+} */
+
+.hero-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: -22px;
+  width: calc(100% + 44px);
+  height: calc(100% + 44px);
+  border-radius: 50%;
+
+  /* ★ Ultra Premium Gradient Glow */
+  background: conic-gradient(
+    from 0deg,
+    #ff007f,
+    #8b5cf6,
+    #00d4ff,
+    #22ff88,
+    #ffea00,
+    #ff6b00,
+    #ff007f
+  );
+
+  background-size: 300% 300%;
+  animation: smoothGlow 6s linear infinite;
+
+  filter: blur(30px);
+  opacity: 0.9;
+  z-index: 1;
 }
 
+@keyframes smoothGlow {
+  0% {
+    transform: rotate(0deg);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-position: 0% 50%;
+  }
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
   #hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 20px 80px; /* balanced top/bottom */
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .hero-buttons a {
     width: 100%;
     display: block;
-    margin: 10px 0;
+    margin: 12px 0;
   }
 
+  /* Image Size */
   .hero-image {
-    max-width: 260px;
+    max-width: 270px;
   }
 
+  /* Keep image centered & not too low */
   .hero-image-wrapper {
     margin-top: 70px;
   }
 
+  /* Mobile Glow - BIG but Balanced */
   .hero-image-wrapper::after {
     top: -10px;
     left: -10px;
     width: calc(100% + 20px);
     height: calc(100% + 20px);
-    filter: blur(12px);
+    border-radius: 50%;
+
+    background: conic-gradient(
+      from 0deg,
+      #ff007f,
+      #8b5cf6,
+      #00d4ff,
+      #22ff88,
+      #ffea00,
+      #ff6b00,
+      #ff007f
+    );
+
+    background-size: 300% 300%;
+    filter: blur(24px);
+    opacity: 0.9;
+
+    animation: rgbRotateMobile 8s linear infinite;
+
+    z-index: 1;
+  }
+}
+
+/* Mobile Animation */
+@keyframes rgbRotateMobile {
+  0% {
+    transform: rotate(0deg);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-position: 0% 50%;
   }
 }
 
