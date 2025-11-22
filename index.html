@@ -17,6 +17,7 @@
 
     <meta name="author" content="Nisan Hossain, Nisan, nisan" />
     <link rel="canonical" href="https://nisan24.vercel.app" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:title"
       content="Nisan Hossain | Software Engineer (Backend)"
@@ -32,6 +33,16 @@
       name="google-site-verification"
       content="B3KzFJ_7M-e54IIDcfVoTSsY-Cc9pXS15Xx1IodDe2c"
     />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Nisan Hossain | Software Engineer (Backend)"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Software Engineer (Backend) & Django Developer, Nisan Hossain."
+    />
+    <meta name="twitter:image" content="./img/picture_1.jpg" />
 
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -49,8 +60,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/nisan_.png" />
-    <link rel="apple-touch-icon" href="img/nisan_.png">
-    <link rel="shortcut icon" href="img/nisan_.png">
+    <link rel="apple-touch-icon" href="img/nisan_.png" />
+    <link rel="shortcut icon" href="img/nisan_.png" />
   </head>
 
   <body>
@@ -131,20 +142,34 @@
             ></a>
           </div>
         </div>
+        <!-- <div class="col-md-6 text-center">
+          <div class="hero-image-wrapper">
+            <img
+              src="./img/picture_1.jpg"
+              alt="Nisan Hossain"
+              class="hero-image img-fluid"
+            />
+          </div>
+        </div> -->
+
         <div class="col-md-6 text-center">
-          <img
-            src="./img/picture_1.jpg"
-            alt="Nisan Hossain"
-            class="hero-image rounded-circle img-fluid"
-          />
+          <div class="hero-image-wrapper">
+            <img
+              src="./img/picture_1.jpg"
+              alt="Nisan Hossain"
+              class="hero-image rounded-circle img-fluid"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ======== -->
-    <section id="about" class="about-section py-5">
+    <!-- ================ About section =============== -->
+    <section id="about" class="about-section mt-2">
       <div class="container py-5">
-        <h2 class="about-section-title text-center mb-4 fw-bold">About Me</h2>
+        <div class="text-center">
+          <h2 class="all-section-title text-center mb-4 fw-bold">About Me</h2>
+        </div>
 
         <div class="about-content mx-auto">
           <p class="lead">
@@ -172,13 +197,15 @@
             <strong>CodeChef (2★, Highest Rating: 1441)</strong>,
             <strong>Vjudge (135+ topic & contest problems)</strong>, and
             <strong>HackerRank</strong>. These challenges strengthened my
-            analytical ability, problem-solving mindset, and logical thinking.
+            <b>analytical ability</b>, <b>problem-solving</b> mindset, and
+            <b>logical thinking</b>.
           </p>
 
           <p>
-            I’m dedicated to writing maintainable, scalable, and efficient code,
-            while constantly learning new tools, patterns, and technologies that
-            enhance product quality and overall system performance.
+            I’m dedicated to writing <b>maintainable</b>, <b>scalable</b>, and
+            <b>efficient code</b>, while constantly learning new <b>tools</b>,
+            <b>patterns</b>, and <b>technologies</b> that enhance product
+            quality and overall system performance.
           </p>
 
           <p class="mb-0">
@@ -189,13 +216,15 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
 
-    <section id="skills" class="skills-section py-5">
+    <!---------------- Skills Section ----------------------->
+    <section id="skills" class="skills-section">
       <div class="container">
-        <h2 class="about-section-title text-center mb-5 fw-bold">
-          Technical Skills
-        </h2>
+        <div class="text-center">
+          <h2 class="all-section-title text-center mt-3 mb-5 fw-bold">
+            Technical Skills
+          </h2>
+        </div>
 
         <div class="row g-4 justify-content-center">
           <!-- Programming Languages -->
@@ -286,9 +315,11 @@
       </div>
     </section>
 
-    <!-- Competitive Programming Section -->
+    <!----------------- Competitive Programming Section ------------------>
     <section id="cp" class="container text-center mt-5">
-      <h2 class="mb-5 fw-bold">Competitive Programming</h2>
+      <h2 class="all-section-title mt-3 mb-5 fw-bold">
+        Competitive Programming
+      </h2>
 
       <div class="row g-4">
         <!-- LeetCode -->
@@ -390,9 +421,14 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+
+    <!------------------- Projects Section ---------------->
     <section id="projects" class="container mt-5">
-      <h2 class="text-center mb-5 fw-bold">🚀 My Projects</h2>
+      <div class="text-center mt-3">
+        <h2 class="all-section-title text-center mt-4 mb-5 fw-bold">
+          Featured Projects
+        </h2>
+      </div>
       <div class="row">
         <!-- StayEase Project -->
         <div class="col-md-6">
@@ -520,10 +556,13 @@
       </div>
     </section>
 
-    <!-- ====== -->
-
+    <!-- ================================================== -->
     <section id="contact" class="container mt-5 mb-4">
-      <h2 class="text-center mb-5 fw-bold">Let's Connect</h2>
+      <div class="text-center mt-3">
+        <h2 class="all-section-title text-center mt-3 mb-5 fw-bold">
+          Let's Connect
+        </h2>
+      </div>
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
           <div class="contact-form-card p-4">
@@ -577,8 +616,8 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <!-- Footer -->
+
+    <!------------------ Footer ------------>
     <footer class="footer py-5 mt-5">
       <div class="container">
         <div class="row justify-content-between">
@@ -589,6 +628,31 @@
               Passionate backend-focused developer building fast, scalable, and
               modern web applications with Python, Django & APIs.
             </p>
+
+            <!-- 🌐 Social Links -->
+            <div class="social-links mt-3">
+              <a href="https://facebook.com/nisan24x" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://instagram.com/nisan24x" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://github.com/nisan24" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://leetcode.com/nisan24" target="_blank"
+                ><i class="fas fa-code"></i
+              ></a>
+              <a href="https://codeforces.com/profile/nisan24" target="_blank"
+                ><i class="fas fa-bolt"></i
+              ></a>
+              <a href="https://www.codechef.com/users/nisan24" target="_blank"
+                ><i class="fas fa-utensils"></i
+              ></a>
+              <a href="https://linkedin.com/nisan24" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
           </div>
 
           <!-- Quick Links -->
@@ -596,7 +660,11 @@
             <h4 class="footer-title">Quick Links</h4>
             <ul class="footer-list">
               <li><a href="/" class="footer-link">Home</a></li>
-              <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+              <li>
+                <a href="https://nisan24.vercel.app/" class="footer-link"
+                  >Portfolio</a
+                >
+              </li>
               <li><a href="#projects" class="footer-link">Projects</a></li>
               <li><a href="#contact" class="footer-link">Contact</a></li>
             </ul>
@@ -618,10 +686,7 @@
                   +880 163 935 4216
                 </a>
               </li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i>
-                Dhaka, Bangladesh
-              </li>
+              <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
             </ul>
           </div>
         </div>

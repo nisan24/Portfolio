@@ -122,11 +122,83 @@ body {
   font-size: 1.1rem;
   border-radius: 50px;
 }
-
-.hero-image {
+/* .hero-image {
   max-width: 300px;
-  border: 8px solid white;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  animation: rgbGlow 4s linear infinite;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+@keyframes rgbGlow {
+  0% {
+    box-shadow: 0 0 20px 4px #ff004f;
+  }
+  33% {
+    box-shadow: 0 0 22px 6px #00e0ff;
+  }
+  66% {
+    box-shadow: 0 0 22px 6px #8dff00;
+  }
+  100% {
+    box-shadow: 0 0 20px 4px #ff004f;
+  }
+} */
+
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto; /* center */
+}
+
+/* IMAGE */
+.hero-image {
+  max-width: 320px;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* DESKTOP RGB GLOW */
+.hero-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: calc(100% + 36px);
+  height: calc(100% + 36px);
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #ff004f,
+    #00e0ff,
+    #7cff00,
+    #ff9a00,
+    #ff004f
+  );
+  background-size: 300% 300%;
+  animation: rgbRotate 4s ease infinite;
+  z-index: 1;
+  filter: blur(18px);
+}
+
+/* RGB Animation */
+@keyframes rgbRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -150,22 +222,49 @@ body {
   }
 
   .hero-image {
-    max-width: 250px;
+    max-width: 220px;
+  }
+  .hero-image-wrapper {
     margin-top: 50px;
+  }
+
+  .hero-image-wrapper::after {
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    filter: blur(12px);
   }
 }
 
+/* .hero-image {
+  max-width: 300px;
+  border: 8px solid white;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+} */
+
 /* ------------------------ */
 
-.about-section-title {
+/* .about-section-title {
   font-size: 2rem;
+} */
+
+/* About Title */
+.all-section-title {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.about-section-title::after {
+.all-section-title::after {
   content: "";
   position: absolute;
-  width: 65px;
-  height: 2px;
+  width: 70px;
+  height: 3px;
   background: #74b3f7;
   bottom: 0;
   left: 50%;
@@ -173,34 +272,39 @@ body {
   border-radius: 4px;
 }
 
-/* Clean content container */
+/* Text Container */
 .about-content {
   max-width: 1100px;
-  line-height: 1.7;
-  font-size: 1.12rem;
-  color: #444;
-}
-
-/* Balanced paragraph spacing */
-.about-content p {
-  margin-bottom: 14px;
-}
-
-/* Lead text slightly bigger */
-.about-content .lead {
-  font-size: 1.22rem;
-  margin-bottom: 16px;
+  margin: 0 auto;
+  font-size: 1.14rem;
+  line-height: 1.75;
   color: #333;
+  letter-spacing: 0.2px;
 }
 
-/* Responsive tweaks */
+/* Paragraphs */
+.about-content p {
+  margin-bottom: 18px;
+}
+
+/* Lead / First paragraph */
+.about-content .lead {
+  font-size: 1.23rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .about-content {
-    font-size: 1.05rem;
-    line-height: 1.65;
+    font-size: 1.08rem;
+    line-height: 1.68;
+    padding: 0 12px;
   }
+
   .about-content .lead {
-    font-size: 1.15rem;
+    font-size: 1.16rem;
   }
 }
 
@@ -256,7 +360,7 @@ body {
 
 /* Smooth hover (less lift) */
 .skill-card:hover {
-  transform: translateY(-4px); /* less jump */
+  transform: translateY(-4px);
   box-shadow: 0 10px 20px rgba(0, 128, 255, 0.18);
 }
 
@@ -375,7 +479,7 @@ body {
   margin-top: auto;
   padding: 10px 20px;
   font-size: 1rem;
-  width: 100%; /* Full width button */
+  width: 100%;
 }
 
 /* Hover effect */
@@ -631,7 +735,6 @@ body {
   transition: 0.3s ease;
 }
 
-/* Smooth Blue Hover + Soft Glow */
 .footer-link:hover {
   color: #4d9bff;
   padding-left: 6px;
@@ -653,6 +756,20 @@ body {
 .footer-bottom-text {
   font-size: 0.9rem;
   color: #bfbfbf;
+}
+
+/* Social Links */
+.social-links a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #d1d1d1;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+  transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
