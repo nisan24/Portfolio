@@ -80,14 +80,34 @@ body {
 
 /* =-=-=-=-=- */
 #hero {
-  padding: 170px 0;
-  background: #f0f4f8;
-  /* background: linear-gradient(135deg, #eef2f3, #dde6ed); */
+  position: relative;
+  padding: 180px 0;
+  background-image: url("img/cover-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0 0 15px 15px;
-  margin-top: auto;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+/* ✨ DARK OVERLAY FOR OPACITY REDUCTION */
+#hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.06); /* 0.35 = 35% dark overlay */
+
+  z-index: 1;
+}
+
+/* Original hero content must stay above overlay */
+#hero > * {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title {
@@ -249,15 +269,22 @@ body {
 @media (max-width: 768px) {
   #hero {
     text-align: center;
+    flex-direction: column;
+
     padding: 60px 20px 80px; /* balanced top/bottom */
+  }
+  .hero-title,
+  .hero-subtitle,
+  .hero-desc {
+    color: cadetblue !important;
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 
   .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .hero-buttons a {
@@ -297,7 +324,7 @@ body {
 
     background-size: 300% 300%;
     filter: blur(24px);
-    opacity: 0.9;
+    opacity: 2;
 
     animation: rgbRotateMobile 8s linear infinite;
 
