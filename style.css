@@ -8,7 +8,9 @@ body {
 
 /* NAVBAR */
 .navbar {
-  background: #1d1c1c;
+  background: #092a4b;
+  /* background: #001f3f; */
+  /* background: #1d1c1c; */
   padding: 16px 30px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   transition: background 0.3s ease, padding 0.3s ease;
@@ -47,75 +49,97 @@ body {
   transform: translateY(-2px);
 }
 
-/* ---------------------- */
-/* FIX: MOBILE TOGGLER ICON */
-/* ---------------------- */
+/* ------------------------------------- */
+/* 1. Base Styles & Smooth Scrolling */
+/* ------------------------------------- */
 
-.navbar-toggler {
-  border: none !important;
-  outline: none !important;
-  padding: 6px;
+html {
+    scroll-behavior: smooth;
 }
 
-/* Custom White SVG hamburger icon */
+:target {
+    scroll-margin-top: 100px; 
+}
+
+
+/* ------------------------------------- */
+/* 2. Custom Mobile Toggler Icon (Hamburger) */
+/* ------------------------------------- */
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    padding: 6px;
+}
+
+/* The middle line of the hamburger icon */
 .custom-toggler-icon {
-  display: block;
-  width: 28px;
-  height: 2px;
-  background-color: #ffffff;
-  position: relative;
-  transition: background 0.3s ease;
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: #ffffff !important;
+    position: relative;
+    transition: background-color 0.3s ease; 
 }
 
 .custom-toggler-icon::before,
 .custom-toggler-icon::after {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 2px;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background-color: #ffffff !important;
+    transition: transform 0.3s ease, top 0.3s ease; 
 }
 
+/* Positioning the top line */
 .custom-toggler-icon::before {
-  top: -8px;
+    top: -8px;
 }
 
+/* Positioning the bottom line */
 .custom-toggler-icon::after {
-  top: 8px;
+    top: 8px; 
 }
 
-/* Mobile dropdown background */
-@media (max-width: 767px) {
-  .navbar {
-    padding: 12px 20px;
-  }
 
-  .navbar-nav {
-    background: #1d1c1c;
-    padding: 18px 0;
-    border-radius: 12px;
-    margin-top: 12px;
-  }
+/* ------------------------------------- */
+/* 3. Media Query (Mobile Specific Styles) */
+/* ------------------------------------- */
 
-  .navbar-nav .nav-item {
-    margin: 10px 0;
-  }
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: 12px 20px;
+    }
 
-  .navbar-nav .nav-link {
-    display: block;
-    width: 100%;
-    padding: 12px 0;
-    font-size: 18px;
-    text-align: center;
-  }
-}
+    /* Mobile Dropdown Background and Shape */
+    .navbar-nav {
+        /* background: #1d1c1c; */
+        background: #092a4b;
+        /* background: #001f3f; */
+        padding: 18px 0;
+        border-radius: 12px;
+        margin-top: 12px;
+        
+    }
 
-html {
-  scroll-behavior: smooth;
-}
-:target {
-  scroll-margin-top: 60px;
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+
+    :target {
+        scroll-margin-top: 70px; 
+    }
 }
 
 /* =-=-=-=-=- */
