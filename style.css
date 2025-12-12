@@ -1,3 +1,4 @@
+/* BASE */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #e6ecf0;
@@ -5,77 +6,116 @@ body {
   padding: 0;
 }
 
+/* NAVBAR */
 .navbar {
-  /* background: linear-gradient(135deg, #343a40, #2f2f2f); */
   background: #1d1c1c;
   padding: 16px 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, padding 0.3s ease;
 }
 
-.navbar:hover {
-  /* background: linear-gradient(135deg, #2f2f2f, #343a40); */
-  background: #1d1c1c;
-}
-
+/* Brand */
 .navbar-brand {
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 1.2px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
   color: #ffffff !important;
   transition: color 0.3s ease;
 }
-
 .navbar-brand:hover {
-  color: #2c2c2c;
+  color: #5e81ff !important;
 }
 
-.navbar-nav {
-  margin: auto;
-  font-size: 18px;
-}
-
+/* Nav items */
 .navbar-nav .nav-item {
   margin: 0 18px;
 }
 
 .navbar-nav .nav-link {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
-  color: white !important;
+  color: #ffffff !important;
   text-transform: uppercase;
   padding: 8px 14px;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #5078e7 !important;
-  background-color: rgba(108, 108, 107, 0.2);
-  transform: scale(1.05);
+  color: #5e81ff !important;
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
 }
+
+/* ---------------------- */
+/* FIX: MOBILE TOGGLER ICON */
+/* ---------------------- */
 
 .navbar-toggler {
-  border: none;
-  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  padding: 6px;
 }
 
-.navbar-toggler-icon {
-  color: #ffffff;
+/* Custom White SVG hamburger icon */
+.custom-toggler-icon {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: #ffffff;
+  position: relative;
+  transition: background 0.3s ease;
 }
 
+.custom-toggler-icon::before,
+.custom-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.custom-toggler-icon::before {
+  top: -8px;
+}
+
+.custom-toggler-icon::after {
+  top: 8px;
+}
+
+/* Mobile dropdown background */
 @media (max-width: 767px) {
   .navbar {
     padding: 12px 20px;
   }
 
   .navbar-nav {
-    font-size: 16px;
+    background: #1d1c1c;
+    padding: 18px 0;
+    border-radius: 12px;
+    margin-top: 12px;
   }
 
   .navbar-nav .nav-item {
-    margin: 0 12px;
+    margin: 10px 0;
   }
+
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 60px;
 }
 
 /* =-=-=-=-=- */
@@ -281,11 +321,14 @@ body {
   }
 
   .hero-title {
-    font-size: 2.2rem; /* কমিয়ে slightly smaller */
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem; /* কমিয়ে slightly smaller */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
   }
 
   .hero-buttons a {

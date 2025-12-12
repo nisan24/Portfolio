@@ -205,11 +205,10 @@
     </script>
   </head>
 
-  
   <!-- ---------------------------------------------- -->
 
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <!-- <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand" href="/">NISAN</a>
         <button
@@ -238,8 +237,42 @@
           </ul>
         </div>
       </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg sticky-top custom-nav">
+      <div class="container">
+        <a class="navbar-brand" href="/">NISAN</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="custom-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
+    <!-- ================ Hero Section =============== -->
     <section
       id="hero"
       class="container d-flex align-items-center justify-content-center text-center text-md-left"
@@ -249,12 +282,19 @@
           <h1 class="hero-title">
             I'm <span class="highlight">Nisan Hossain</span>
           </h1>
+
           <p class="hero-subtitle">Software Engineer & Python Developer</p>
           <p class="hero-desc">
             I'm a passionate Computer Science student focusing on algorithms,
+            scalable backend systems, REST API development, and building robust
+            web applications using Python, Django, and MySQL. 🚀
+          </p>
+
+          <!-- <p class="hero-desc">
+            I'm a passionate Computer Science student focusing on algorithms,
             scalable backend solutions, and building robust web applications
             with Python and Django. 🚀
-          </p>
+          </p> -->
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary tels-btn btn-lg"
               >Let's Talk</a
@@ -362,7 +402,7 @@
       </div>
     </section> -->
 
-    <section id="about" class="about-section mt-2">
+    <!-- <section id="about" class="about-section mt-2">
       <div class="container py-5">
         <div class="text-center">
           <h2 class="all-section-title text-center mb-4 fw-bold">About Me</h2>
@@ -436,6 +476,85 @@
           <p class="mb-0">
             If you’re interested in working together or discussing software
             engineering ideas — I’m always open for collaboration.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="about" class="about-section mt-2">
+      <div class="container py-5">
+        <div class="text-center">
+          <h2 class="all-section-title text-center mb-4 fw-bold">About Me</h2>
+        </div>
+
+        <div class="about-content mx-auto">
+          <p class="lead">
+            I’m <strong>Nisan Hossain</strong>, a backend-focused Software
+            Engineer passionate about building scalable, secure, and
+            high-performance web applications. I specialize in
+            <strong>Python</strong>, <strong>Django</strong>, and the
+            <strong>Django REST Framework (DRF)</strong> — with strong
+            experience in backend architecture, API design, authentication
+            systems, and database-driven development.
+          </p>
+
+          <p>
+            My approach to engineering emphasizes clarity, structure, and
+            reliability. I enjoy designing well-organized systems, optimizing
+            performance, and building backend logic that is predictable,
+            maintainable, and production-ready. I’m deeply interested in system
+            design, database modeling, and solving real-world backend
+            challenges.
+          </p>
+
+          <p>
+            I have a strong foundation in
+            <strong>C</strong>,
+            <strong>C++ (Data Structures & Algorithms)</strong>,
+            <strong>Python OOP</strong>, <strong>MySQL</strong>,
+            <strong>PostgreSQL</strong>, <strong>REST APIs</strong>, role-based
+            authentication, and modern backend workflows. My development process
+            typically includes designing clean API endpoints, creating efficient
+            database schemas, and ensuring smooth integration across systems and
+            services.
+          </p>
+
+          <p>
+            I’ve solved over
+            <strong>840+ competitive programming problems</strong>, which
+            strengthened my logical thinking, optimization skills, and
+            algorithmic understanding. Some highlights include:
+          </p>
+
+          <ul>
+            <li>
+              <strong>420+ problems</strong> on <strong>Codeforces</strong> (Max
+              Rating: 1062)
+            </li>
+            <li><strong>180+ problems</strong> on <strong>LeetCode</strong></li>
+            <li>
+              <strong>2★ Coder</strong> on <strong>CodeChef</strong> (Highest
+              Rating: 1441)
+            </li>
+            <li>
+              <strong>135+</strong> contest & topic-based problems on
+              <strong>Vjudge</strong>
+            </li>
+            <li>Additional problem-solving on <strong>HackerRank</strong></li>
+          </ul>
+
+          <p>
+            These experiences helped me develop a sharp engineering mindset —
+            enabling me to write optimized queries, design efficient endpoints,
+            and understand complex backend logic confidently. I constantly learn
+            new technologies, improve my architectural skills, and explore best
+            practices for building scalable systems.
+          </p>
+
+          <p class="mb-0">
+            I’m always open to collaboration, backend-focused discussions, and
+            building impactful software solutions with clean, reliable
+            engineering.
           </p>
         </div>
       </div>
@@ -789,7 +908,7 @@
           <div class="contact-form-card p-4">
             <form action="#" method="post">
               <div class="mb-3">
-                <label for="name" class="form-label">Your Name</label>
+                <label for="name" class="form-label mt-3">Your Name</label>
                 <input
                   type="text"
                   class="form-control"
@@ -929,5 +1048,18 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      const navCollapse = document.querySelector(".navbar-collapse");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (navCollapse.classList.contains("show")) {
+            new bootstrap.Collapse(navCollapse).toggle();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
