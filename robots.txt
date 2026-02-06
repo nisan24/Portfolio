@@ -1,0 +1,28 @@
+# *******************************************
+# Optimized Robots.txt for Nisan Hossain Portfolio
+# *******************************************
+
+User-agent: *
+Allow: /
+Allow: /img/
+Allow: /style.css
+Allow: /script.js
+
+# কিছু কমন ফোল্ডার যা গুগল ইনডেক্স করার প্রয়োজন নেই (যদি থাকে)
+Disallow: /private/
+Disallow: /admin/
+Disallow: /temp/
+
+# রোবটকে বলে দেওয়া আপনার সাইটম্যাপ কোথায় আছে
+Sitemap: https://nisan24.vercel.app/sitemap.xml
+
+# ক্রলারদের জন্য একটু সময় বিরতি (সার্ভার লোড কমাতে)
+Crawl-delay: 1
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+
+# *******************************************
+# End of Robots.txt
+# *******************************************
