@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Nisan Hossain Portfolio Feed</title>
+    <link>https://nisan24.vercel.app</link>
+    <atom:link href="https://nisan24.vercel.app/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Latest updates, projects, and achievements from Nisan Hossain — Backend Software Engineer specializing in Python, Django, REST APIs, and MySQL/PostgreSQL.</description>
+    <language>en-us</language>
+    <copyright>Copyright © 2026 Nisan Hossain. All rights reserved.</copyright>
+    <managingEditor>nisanhossain76@gmail.com (Nisan Hossain)</managingEditor>
+    <webMaster>nisanhossain76@gmail.com (Nisan Hossain)</webMaster>
+    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+    <ttl>1440</ttl>
+    <generator>Manual / Static Portfolio Feed</generator>
+    <image>
+      <url>https://nisan24.vercel.app/img/nisan_.png</url>
+      <title>Nisan Hossain Portfolio Feed</title>
+      <link>https://nisan24.vercel.app</link>
+    </image>
+    <!--
+      Sample item — replace with your real portfolio updates (new projects,
+      blog posts, achievements, etc). Each time you update your site, add a
+      new <item> block above the previous ones (newest first).
+    -->
+    <item>
+      <title>Welcome to Nisan Hossain's Portfolio</title>
+      <link>https://nisan24.vercel.app</link>
+      <guid isPermaLink="true">https://nisan24.vercel.app</guid>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Nisan Hossain</dc:creator>
+      <description>
+        <![CDATA[
+        Explore the portfolio of Nisan Hossain, a Backend Software Engineer
+        specializing in Python, Django, REST APIs, and scalable backend
+        systems. See featured projects, skills, and achievements.
+      ]]>
+      </description>
+    </item>
+  </channel>
+</rss>

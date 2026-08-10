@@ -5,17 +5,75 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Main Portfolio Homepage & Image Indexing -->
   <url>
     <loc>https://nisan24.vercel.app/</loc>
-    <lastmod>2026-02-06</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    
+
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/picture_1.jpg</image:loc>
-      <image:caption>Nisan Hossain - Backend Software Engineer Portfolio</image:caption>
-      <image:title>Nisan Hossain Portfolio Image</image:title>
+      <image:caption>Md. Nisan Hossain - Backend Software Engineer</image:caption>
+      <image:title>Md. Nisan Hossain Profile Picture</image:title>
     </image:image>
+
+    <image:image>
+      <image:loc>https://nisan24.vercel.app/img/nisan_3.jpg</image:loc>
+      <image:caption>Nisan Hossain - Python Django Developer</image:caption>
+      <image:title>Nisan Hossain Portfolio Photo</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://nisan24.vercel.app/img/nisan24.jpg</image:loc>
+      <image:caption>Md. Nisan Hossain - Software Engineer Workspace</image:caption>
+      <image:title>Md. Nisan Hossain Workspace</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://nisan24.vercel.app/img/nisan-hossain24.jpg</image:loc>
+      <image:caption>Nisan Hossain - Backend Engineer Headshot</image:caption>
+      <image:title>Nisan Hossain Official Headshot</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://nisan24.vercel.app/img/nisan.jpg</image:loc>
+      <image:caption>Md. Nisan Hossain - Software Engineer Portrait</image:caption>
+      <image:title>Md. Nisan Hossain Full Portrait</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://nisan24.vercel.app/img/nisan-hossain-friend.jpg</image:loc>
+      <image:caption>Md. Nisan Hossain with Colleagues and Friends</image:caption>
+      <image:title>Md. Nisan Hossain Social Photo</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://nisan24.vercel.app/img/nisan-hossain.jpg</image:loc>
+      <image:caption>Md. Nisan Hossain - Professional Software Engineer</image:caption>
+      <image:title>Md. Nisan Hossain Profile Photo</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://nisan24.vercel.app/img/nisan_.png</image:loc>
+      <image:caption>Nisan Hossain Official Logo Icon</image:caption>
+      <image:title>Nisan Hossain Brand Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- Resume & CV Indexing -->
+  <url>
+    <loc>https://nisan24.vercel.app/resume.pdf</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/Nisan_Hossain_PythonDjangoDeveloper.pdf</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

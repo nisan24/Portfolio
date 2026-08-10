@@ -1,28 +1,33 @@
-# *******************************************
-# Optimized Robots.txt for Nisan Hossain Portfolio
-# *******************************************
+# robots.txt for Nisan Hossain Portfolio
+# https://nisan24.vercel.app
 
 User-agent: *
 Allow: /
-Allow: /img/
-Allow: /style.css
-Allow: /script.js
 
-# কিছু কমন ফোল্ডার যা গুগল ইনডেক্স করার প্রয়োজন নেই (যদি থাকে)
+# Private, administrative, or work-in-progress directories
+# (kept as a safety net even if unused today — harmless either way)
 Disallow: /private/
 Disallow: /admin/
 Disallow: /temp/
+Disallow: /draft/
 
-# রোবটকে বলে দেওয়া আপনার সাইটম্যাপ কোথায় আছে
+# Deployment / config internals that should never be crawled or indexed
+# even if accidentally exposed publicly
+Disallow: /.git/
+Disallow: /.vercel/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.env
+
+# Explicitly allow key static assets (already covered by "Allow: /" above,
+# but stated for clarity / some crawlers respect explicit allows better)
+Allow: /img/
+Allow: /style.css
+Allow: /resume.pdf
+Allow: /sitemap.xml
+Allow: /rss.xml
+Allow: /Nisan_Hossain_PythonDjangoDeveloper.pdf
+
+
+# XML Sitemap location
 Sitemap: https://nisan24.vercel.app/sitemap.xml
-
-# ক্রলারদের জন্য একটু সময় বিরতি (সার্ভার লোড কমাতে)
-Crawl-delay: 1
-
-# Specific rules for Googlebot
-User-agent: Googlebot
-Allow: /
-
-# *******************************************
-# End of Robots.txt
-# *******************************************
