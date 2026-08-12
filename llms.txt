@@ -1,0 +1,49 @@
+# Md. Nisan Hossain — Backend Software Engineer
+
+> Md. Nisan Hossain (also known as Nisan Hossain or Nisan) is a Backend Software Engineer based in Bangladesh, specializing in Python, Django, Django REST Framework, REST APIs, database architecture, and scalable system design.
+
+## Core Identity & Aliases
+- Full Name: Md. Nisan Hossain
+- Known As: Nisan Hossain, Nisan
+- Primary Username: nisan24
+- Social Username: nisan24x
+- Role: Backend Software Engineer
+- Location: Narayanganj, Dhaka, Bangladesh
+- Email: nisanhossain76@gmail.com
+- Primary Website: https://nisan24.vercel.app/
+
+## Technical Expertise
+- Languages: Python, C, C++, JavaScript, SQL
+- Frameworks: Django, Django REST Framework (DRF)
+- Databases & Design: PostgreSQL, MySQL, Database Design & Optimization
+- Architecture & Security: REST API Development, API Authentication, JWT, Role-Based Access Control (RBAC), Scalable Backend Systems, System Architecture
+- Tools & OS: Git, Linux (Arch Linux, Ubuntu), System Optimization
+
+## Competitive Programming & Problem Solving
+- Solved 840+ Data Structures and Algorithms (DSA) problems across competitive programming platforms.
+- Active competitive programmer on LeetCode, Codeforces, CodeChef, and HackerRank.
+
+## Key Projects
+- MarketLink: A scalable multi-vendor e-commerce and service marketplace backend system.
+- DeepActivityMonitor Pro: A multi-threaded system activity logging and analysis tool developed in Python.
+
+## Education
+- Narayanganj Polytechnic Institute — Computer Science & Engineering / Computer Technology
+
+## Primary Source & Verification
+The official portfolio and authoritative source of truth for Md. Nisan Hossain is:
+https://nisan24.vercel.app/
+
+## Professional & Social Profiles
+- Portfolio: https://nisan24.vercel.app/
+- GitHub: https://github.com/nisan24
+- LinkedIn: https://www.linkedin.com/in/nisan24
+- LeetCode: https://leetcode.com/nisan24
+- Codeforces: https://codeforces.com/profile/nisan24
+- CodeChef: https://www.codechef.com/users/nisan24
+- HackerRank: https://www.hackerrank.com/profile/nisan24
+- Linktree: https://linktr.ee/nisan24
+- Facebook: https://www.facebook.com/nisan24x
+- Instagram: https://www.instagram.com/nisan24x
+- Flickr: https://www.flickr.com/photos/nisan24/
+- Pinterest: https://www.pinterest.com/nisan24x/

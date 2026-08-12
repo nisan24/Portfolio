@@ -1,34 +1,47 @@
-# Nisan Hossain Portfolio
-# https://nisan24.vercel.app/
+# ===================================================
+# Nisan Hossain | Portfolio Website Robots.txt
+# Primary URL: https://nisan24.vercel.app/
+# Author: Md. Nisan Hossain (Backend Software Engineer)
+# ===================================================
 
-# ChatGPT Search
+# 1. Allow All Search Engines & Standard Crawlers
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /sitemap.xml
+Allow: /img/
+Allow: /style.css
+Allow: /resume.pdf
+Allow: /Nisan_Hossain_PythonDjangoDeveloper.pdf
+
+# 2. Explicit Allow for AI Crawlers & Search Engines (AI SEO / GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
 
-# All other crawlers
-User-agent: *
+User-agent: PerplexityBot
 Allow: /
 
-# Private / work-in-progress
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# 3. Security & Internal Directives (Disallows)
 Disallow: /private/
 Disallow: /admin/
 Disallow: /temp/
 Disallow: /draft/
-
-# Deployment / config internals
 Disallow: /.git/
 Disallow: /.vercel/
 Disallow: /node_modules/
+Disallow: /*.env
 
-# Environment/config files
-Disallow: /*.env$
-
-# Public assets
-Allow: /img/
-Allow: /style.css
-Allow: /resume.pdf
-Allow: /sitemap.xml
-Allow: /rss.xml
-Allow: /Nisan_Hossain_PythonDjangoDeveloper.pdf
-
+# 4. Sitemap Declaration
 Sitemap: https://nisan24.vercel.app/sitemap.xml
