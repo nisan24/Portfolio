@@ -1,0 +1,177 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://nisan24.vercel.app/#person",
+      "name": "Md. Nisan Hossain",
+      "givenName": "Nisan",
+      "familyName": "Hossain",
+      "alternateName": [
+        "Nisan Hossain",
+        "Nisan",
+        "nisan24",
+        "nisan24x"
+      ],
+      "description": "Md. Nisan Hossain, commonly known as Nisan Hossain or Nisan, is a Bangladesh-based Backend Software Engineer and Python Developer specializing in Python, Django, Django REST Framework, REST APIs, database engineering, authentication, authorization, API integration, and scalable backend systems.",
+      "disambiguatingDescription": "Bangladesh-based Backend Software Engineer and Python Developer associated with the developer usernames nisan24 and nisan24x, with an official portfolio at nisan24.vercel.app.",
+      "url": "https://nisan24.vercel.app/",
+      "mainEntityOfPage": {
+        "@id": "https://nisan24.vercel.app/#webpage"
+      },
+      "image": [
+        {
+          "@id": "https://nisan24.vercel.app/#primaryimage"
+        },
+        "https://nisan24.vercel.app/img/picture_1.jpg",
+        "https://nisan24.vercel.app/img/nisan_3.jpg",
+        "https://nisan24.vercel.app/img/nisan24.jpg",
+        "https://nisan24.vercel.app/img/nisan-hossain24.jpg",
+        "https://nisan24.vercel.app/img/nisan.jpg",
+        "https://nisan24.vercel.app/img/nisan-hossain.jpg"
+      ],
+      "jobTitle": "Backend Software Engineer",
+      "email": "mailto:nisanhossain76@gmail.com",
+      "nationality": {
+        "@type": "Country",
+        "name": "Bangladesh"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BD"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Narayanganj Polytechnic Institute"
+      },
+      "knowsAbout": [
+        "Backend Software Engineering",
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "REST API Development",
+        "RESTful API Design",
+        "PostgreSQL",
+        "MySQL",
+        "SQLite",
+        "Database Engineering",
+        "Database Design",
+        "Database Optimization",
+        "Django ORM",
+        "Authentication",
+        "Authorization",
+        "JWT",
+        "Role-Based Access Control",
+        "API Security",
+        "Third-Party API Integration",
+        "Payment Integration",
+        "Cloudinary",
+        "Data Structures and Algorithms",
+        "Competitive Programming",
+        "C",
+        "C++",
+        "JavaScript",
+        "SQL",
+        "Git",
+        "GitHub",
+        "Linux",
+        "System Architecture",
+        "Scalable Backend Systems"
+      ],
+      "sameAs": [
+        "https://github.com/nisan24",
+        "https://www.linkedin.com/in/nisan24",
+        "https://leetcode.com/nisan24",
+        "https://codeforces.com/profile/nisan24",
+        "https://www.codechef.com/users/nisan24",
+        "https://www.hackerrank.com/profile/nisan24",
+        "https://linktr.ee/nisan24",
+        "https://www.facebook.com/nisan24x",
+        "https://www.instagram.com/nisan24x",
+        "https://www.flickr.com/photos/nisan24/",
+        "https://www.pinterest.com/nisan24x/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nisan24.vercel.app/#website",
+      "url": "https://nisan24.vercel.app/",
+      "name": "Nisan Hossain — Backend Software Engineer",
+      "alternateName": "Nisan Hossain Portfolio",
+      "description": "Official portfolio of Md. Nisan Hossain, a Bangladesh-based Backend Software Engineer and Python Developer specializing in Python, Django, Django REST Framework, REST APIs, databases, and scalable backend systems.",
+      "publisher": {
+        "@id": "https://nisan24.vercel.app/#person"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://nisan24.vercel.app/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://nisan24.vercel.app/#webpage",
+      "url": "https://nisan24.vercel.app/",
+      "name": "Md. Nisan Hossain | Backend Software Engineer",
+      "description": "Official portfolio of Md. Nisan Hossain, Backend Software Engineer specializing in Python, Django, Django REST Framework, REST APIs, database engineering, and scalable backend systems.",
+      "isPartOf": {
+        "@id": "https://nisan24.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://nisan24.vercel.app/#person"
+      },
+      "mainEntity": {
+        "@id": "https://nisan24.vercel.app/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://nisan24.vercel.app/#primaryimage"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://nisan24.vercel.app/#profilepage",
+      "url": "https://nisan24.vercel.app/",
+      "name": "Nisan Hossain — Professional Profile",
+      "mainEntity": {
+        "@id": "https://nisan24.vercel.app/#person"
+      },
+      "isPartOf": {
+        "@id": "https://nisan24.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://nisan24.vercel.app/#person"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://nisan24.vercel.app/#primaryimage",
+      "url": "https://nisan24.vercel.app/img/picture_1.jpg",
+      "contentUrl": "https://nisan24.vercel.app/img/picture_1.jpg",
+      "name": "Md. Nisan Hossain — Backend Software Engineer",
+      "caption": "Md. Nisan Hossain, Backend Software Engineer and Python Developer",
+      "description": "Professional portfolio photo of Md. Nisan Hossain.",
+      "representativeOfPage": true,
+      "creator": {
+        "@id": "https://nisan24.vercel.app/#person"
+      },
+      "copyrightHolder": {
+        "@id": "https://nisan24.vercel.app/#person"
+      },
+      "copyrightYear": 2026,
+      "creditText": "Nisan Hossain"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nisan24.vercel.app/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nisan24.vercel.app/"
+        }
+      ]
+    }
+  ]
+}

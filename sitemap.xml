@@ -1,79 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset
+  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Main Portfolio Homepage & Image Indexing -->
+  <!-- =========================================================
+       Md. Nisan Hossain — Canonical Portfolio
+       https://nisan24.vercel.app/
+       ========================================================= -->
+
+  <!-- =========================================================
+       1. Main Portfolio / Canonical Entity Page
+       ========================================================= -->
+
   <url>
     <loc>https://nisan24.vercel.app/</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-08-14</lastmod>
+
+    <!-- Primary professional images -->
 
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/picture_1.jpg</image:loc>
-      <image:caption>Md. Nisan Hossain - Backend Software Engineer</image:caption>
-      <image:title>Md. Nisan Hossain Profile Picture</image:title>
+      <image:title>Md. Nisan Hossain - Backend Software Engineer</image:title>
+      <image:caption>Md. Nisan Hossain, Backend Software Engineer and Python Developer</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/nisan_3.jpg</image:loc>
-      <image:caption>Nisan Hossain - Python Django Developer</image:caption>
-      <image:title>Nisan Hossain Portfolio Photo</image:title>
+      <image:title>Nisan Hossain - Python Django Developer</image:title>
+      <image:caption>Nisan Hossain - Backend Software Engineer specializing in Python and Django</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/nisan24.jpg</image:loc>
-      <image:caption>Md. Nisan Hossain - Software Engineer Workspace</image:caption>
-      <image:title>Md. Nisan Hossain Workspace</image:title>
+      <image:title>Md. Nisan Hossain - Software Engineer</image:title>
+      <image:caption>Md. Nisan Hossain - Backend Software Engineer portfolio photo</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/nisan-hossain24.jpg</image:loc>
-      <image:caption>Nisan Hossain - Backend Engineer Headshot</image:caption>
       <image:title>Nisan Hossain Official Headshot</image:title>
+      <image:caption>Nisan Hossain - Backend Software Engineer</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/nisan.jpg</image:loc>
-      <image:caption>Md. Nisan Hossain - Software Engineer Portrait</image:caption>
-      <image:title>Md. Nisan Hossain Full Portrait</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://nisan24.vercel.app/img/nisan-hossain-friend.jpg</image:loc>
-      <image:caption>Md. Nisan Hossain with Colleagues and Friends</image:caption>
-      <image:title>Md. Nisan Hossain Social Photo</image:title>
+      <image:title>Md. Nisan Hossain Portrait</image:title>
+      <image:caption>Md. Nisan Hossain - Backend Software Engineer and Python Developer</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/nisan-hossain.jpg</image:loc>
-      <image:caption>Md. Nisan Hossain - Professional Software Engineer</image:caption>
       <image:title>Md. Nisan Hossain Profile Photo</image:title>
+      <image:caption>Md. Nisan Hossain - Backend Software Engineer</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nisan24.vercel.app/img/nisan_.png</image:loc>
-      <image:caption>Nisan Hossain Official Logo Icon</image:caption>
-      <image:title>Nisan Hossain Brand Logo</image:title>
+      <image:title>Nisan Hossain Logo</image:title>
+      <image:caption>Nisan Hossain personal developer brand logo</image:caption>
     </image:image>
+
   </url>
 
-  <!-- Resume & CV Indexing -->
+
+  <!-- =========================================================
+       2. AI / LLM Knowledge Resources
+       ========================================================= -->
+
+  <url>
+    <loc>https://nisan24.vercel.app/llms.txt</loc>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/llms.md</loc>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/llms-full.md</loc>
+  </url>
+
+
+  <!-- =========================================================
+       3. Canonical Person / Entity Documents
+       ========================================================= -->
+
+  <url>
+    <loc>https://nisan24.vercel.app/person.md</loc>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/identity.md</loc>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/profile.md</loc>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/faq.md</loc>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/achievements.md</loc>
+  </url>
+
+  <url>
+    <loc>https://nisan24.vercel.app/person.jsonId</loc>
+  </url>
+
+
+  <!-- =========================================================
+       4. Resume / Professional Documents
+       ========================================================= -->
+
   <url>
     <loc>https://nisan24.vercel.app/resume.pdf</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-14</lastmod>
   </url>
 
   <url>
     <loc>https://nisan24.vercel.app/Nisan_Hossain_PythonDjangoDeveloper.pdf</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-14</lastmod>
   </url>
 
 </urlset>

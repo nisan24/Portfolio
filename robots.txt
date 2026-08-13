@@ -1,20 +1,24 @@
-# ===================================================
-# Nisan Hossain | Portfolio Website Robots.txt
-# Primary URL: https://nisan24.vercel.app/
-# Author: Md. Nisan Hossain (Backend Software Engineer)
-# ===================================================
+# ============================================================
+# Md. Nisan Hossain | Portfolio Website
+# Canonical: https://nisan24.vercel.app/
+# Entity: Md. Nisan Hossain
+# Role: Backend Software Engineer | Python | Django | DRF
+# ============================================================
 
-# 1. Allow All Search Engines & Standard Crawlers
+# ------------------------------------------------------------
+# 1. Default Crawler Policy
+# ------------------------------------------------------------
+
 User-agent: *
 Allow: /
-Allow: /llms.txt
-Allow: /sitemap.xml
-Allow: /img/
-Allow: /style.css
-Allow: /resume.pdf
-Allow: /Nisan_Hossain_PythonDjangoDeveloper.pdf
 
-# 2. Explicit Allow for AI Crawlers & Search Engines (AI SEO / GEO)
+# ------------------------------------------------------------
+# 2. AI / LLM Crawlers
+# ------------------------------------------------------------
+# Public portfolio and AI-readable resources are intentionally
+# available for crawling and discovery.
+# ------------------------------------------------------------
+
 User-agent: GPTBot
 Allow: /
 
@@ -24,16 +28,20 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: ClaudeBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: PerplexityBot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-# 3. Security & Internal Directives (Disallows)
+# ------------------------------------------------------------
+# 3. Private / Internal / Temporary Resources
+# ------------------------------------------------------------
+
+User-agent: *
 Disallow: /private/
 Disallow: /admin/
 Disallow: /temp/
@@ -41,7 +49,35 @@ Disallow: /draft/
 Disallow: /.git/
 Disallow: /.vercel/
 Disallow: /node_modules/
-Disallow: /*.env
+Disallow: /*.env$
 
-# 4. Sitemap Declaration
+# ------------------------------------------------------------
+# 4. AI-Readable Entity Resources
+# ------------------------------------------------------------
+# These resources are intentionally public and crawlable.
+# ------------------------------------------------------------
+
+Allow: /llms.txt
+Allow: /llms.md
+Allow: /llms-full.md
+Allow: /person.md
+Allow: /identity.md
+Allow: /profile.md
+Allow: /faq.md
+Allow: /achievements.md
+Allow: /person.jsonId
+
+# ------------------------------------------------------------
+# 5. Public Portfolio Assets
+# ------------------------------------------------------------
+
+Allow: /img/
+Allow: /style.css
+Allow: /resume.pdf
+Allow: /Nisan_Hossain_PythonDjangoDeveloper.pdf
+
+# ------------------------------------------------------------
+# 6. Sitemap
+# ------------------------------------------------------------
+
 Sitemap: https://nisan24.vercel.app/sitemap.xml

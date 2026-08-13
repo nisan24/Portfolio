@@ -1,44 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
-  xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+
   <channel>
-    <title>Nisan Hossain Portfolio Feed</title>
-    <link>https://nisan24.vercel.app</link>
-    <atom:link href="https://nisan24.vercel.app/rss.xml" rel="self" type="application/rss+xml" />
-    <description>Latest updates, projects, and achievements from Nisan Hossain — Backend Software Engineer specializing in Python, Django, REST APIs, and MySQL/PostgreSQL.</description>
+
+    <!-- =======================================================
+         Nisan Hossain — Canonical Portfolio RSS Feed
+         ======================================================= -->
+
+    <title>Nisan Hossain — Backend Software Engineer</title>
+
+    <link>https://nisan24.vercel.app/</link>
+
+    <atom:link
+      href="https://nisan24.vercel.app/rss.xml"
+      rel="self"
+      type="application/rss+xml" />
+
+    <description>
+      Official updates from Md. Nisan Hossain (Nisan Hossain / Nisan),
+      a Bangladesh-based Backend Software Engineer and Python Developer
+      specializing in Python, Django, Django REST Framework, REST APIs,
+      database engineering, authentication, API integration, and scalable
+      backend systems.
+    </description>
+
     <language>en-us</language>
-    <copyright>Copyright © 2026 Nisan Hossain. All rights reserved.</copyright>
-    <managingEditor>nisanhossain76@gmail.com (Nisan Hossain)</managingEditor>
-    <webMaster>nisanhossain76@gmail.com (Nisan Hossain)</webMaster>
-    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 GMT</lastBuildDate>
-    <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+
+    <copyright>
+      Copyright © 2026 Md. Nisan Hossain. All rights reserved.
+    </copyright>
+
+    <managingEditor>
+      nisanhossain76@gmail.com (Md. Nisan Hossain)
+    </managingEditor>
+
+    <webMaster>
+      nisanhossain76@gmail.com (Md. Nisan Hossain)
+    </webMaster>
+
+    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 GMT</lastBuildDate>
+
+    <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+
     <ttl>1440</ttl>
-    <generator>Manual / Static Portfolio Feed</generator>
+
+    <generator>Static Portfolio RSS Feed</generator>
+
+    <category>Software Engineering</category>
+    <category>Backend Development</category>
+    <category>Python</category>
+    <category>Django</category>
+    <category>Django REST Framework</category>
+    <category>Competitive Programming</category>
+
+    <!-- =======================================================
+         Feed Image
+         ======================================================= -->
+
     <image>
       <url>https://nisan24.vercel.app/img/nisan_.png</url>
-      <title>Nisan Hossain Portfolio Feed</title>
-      <link>https://nisan24.vercel.app</link>
+      <title>Nisan Hossain — Backend Software Engineer</title>
+      <link>https://nisan24.vercel.app/</link>
     </image>
-    <!--
-      Sample item — replace with your real portfolio updates (new projects,
-      blog posts, achievements, etc). Each time you update your site, add a
-      new <item> block above the previous ones (newest first).
-    -->
+
+
+    <!-- =======================================================
+         Item 1 — Professional Profile
+         ======================================================= -->
+
     <item>
-      <title>Welcome to Nisan Hossain's Portfolio</title>
-      <link>https://nisan24.vercel.app</link>
-      <guid isPermaLink="true">https://nisan24.vercel.app</guid>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
-      <dc:creator>Nisan Hossain</dc:creator>
+
+      <title>
+        Md. Nisan Hossain — Backend Software Engineer
+      </title>
+
+      <link>
+        https://nisan24.vercel.app/
+      </link>
+
+      <guid isPermaLink="true">
+        https://nisan24.vercel.app/#profile
+      </guid>
+
+      <pubDate>
+        Fri, 14 Aug 2026 00:00:00 GMT
+      </pubDate>
+
+      <dc:creator>
+        Md. Nisan Hossain
+      </dc:creator>
+
+      <category>Professional Profile</category>
+      <category>Backend Engineering</category>
+      <category>Python</category>
+      <category>Django</category>
+
       <description>
         <![CDATA[
-        Explore the portfolio of Nisan Hossain, a Backend Software Engineer
-        specializing in Python, Django, REST APIs, and scalable backend
-        systems. See featured projects, skills, and achievements.
-      ]]>
+          Md. Nisan Hossain, commonly known as Nisan Hossain or Nisan,
+          is a Bangladesh-based Backend Software Engineer and Python
+          Developer specializing in Python, Django, Django REST Framework,
+          REST APIs, database engineering, authentication, authorization,
+          API integration, and scalable backend systems.
+        ]]>
       </description>
+
+      <content:encoded>
+        <![CDATA[
+          <p>
+            <strong>Md. Nisan Hossain</strong>, also known as
+            <strong>Nisan Hossain</strong> or <strong>Nisan</strong>,
+            is a Bangladesh-based Backend Software Engineer and Python
+            Developer.
+          </p>
+
+          <p>
+            His primary development stack includes
+            <strong>Python, Django, Django REST Framework (DRF),
+            REST APIs, PostgreSQL, MySQL, authentication,
+            authorization, and backend architecture</strong>.
+          </p>
+
+          <p>
+            Developer username:
+            <strong>nisan24</strong>
+          </p>
+
+          <p>
+            Official portfolio:
+            <a href="https://nisan24.vercel.app/">
+              https://nisan24.vercel.app/
+            </a>
+          </p>
+        ]]>
+      </content:encoded>
+
     </item>
+
+
+    <!-- =======================================================
+         Item 2 — Competitive Programming
+         ======================================================= -->
+
+    <item>
+
+      <title>
+        Nisan Hossain — Competitive Programming &amp; DSA
+      </title>
+
+      <link>
+        https://nisan24.vercel.app/achievements.md
+      </link>
+
+      <guid isPermaLink="true">
+        https://nisan24.vercel.app/achievements.md
+      </guid>
+
+      <pubDate>
+        Fri, 14 Aug 2026 00:00:00 GMT
+      </pubDate>
+
+      <dc:creator>
+        Md. Nisan Hossain
+      </dc:creator>
+
+      <category>Competitive Programming</category>
+      <category>Data Structures and Algorithms</category>
+      <category>Achievements</category>
+
+      <description>
+        <![CDATA[
+          Nisan Hossain has publicly reported 840+ solved DSA and
+          competitive-programming problems across multiple programming
+          platforms, including Codeforces, LeetCode, CodeChef, VJudge,
+          and HackerRank.
+        ]]>
+      </description>
+
+    </item>
+
+
+    <!-- =======================================================
+         Item 3 — StayEase
+         ======================================================= -->
+
+    <item>
+
+      <title>
+        StayEase — Hotel Booking Platform by Nisan Hossain
+      </title>
+
+      <link>
+        https://nisan24.vercel.app/
+      </link>
+
+      <guid isPermaLink="false">
+        https://nisan24.vercel.app/#stayease
+      </guid>
+
+      <pubDate>
+        Fri, 14 Aug 2026 00:00:00 GMT
+      </pubDate>
+
+      <dc:creator>
+        Md. Nisan Hossain
+      </dc:creator>
+
+      <category>Project</category>
+      <category>Django</category>
+      <category>Backend Development</category>
+
+      <description>
+        <![CDATA[
+          StayEase is a hotel booking platform developed by Nisan Hossain,
+          featuring hotel discovery, room availability, booking workflows,
+          authentication, reviews, and payment functionality.
+        ]]>
+      </description>
+
+    </item>
+
+
+    <!-- =======================================================
+         Item 4 — Clothify
+         ======================================================= -->
+
+    <item>
+
+      <title>
+        Clothify — Fashion E-Commerce Platform by Nisan Hossain
+      </title>
+
+      <link>
+        https://nisan24.vercel.app/
+      </link>
+
+      <guid isPermaLink="false">
+        https://nisan24.vercel.app/#clothify
+      </guid>
+
+      <pubDate>
+        Fri, 14 Aug 2026 00:00:00 GMT
+      </pubDate>
+
+      <dc:creator>
+        Md. Nisan Hossain
+      </dc:creator>
+
+      <category>Project</category>
+      <category>E-Commerce</category>
+      <category>Django</category>
+
+      <description>
+        <![CDATA[
+          Clothify is a fashion e-commerce project developed by
+          Nisan Hossain with product browsing, search, filtering,
+          cart, wishlist, checkout, reviews, authentication,
+          and payment integration.
+        ]]>
+      </description>
+
+    </item>
+
   </channel>
 </rss>

@@ -720,16 +720,23 @@ body {
    About Section - Modern Typography, Layout & Animations
    ========================================================================== */
 
+/* ==========================================================================
+   ABOUT SECTION
+   Modern, Clean & Professional
+   ========================================================================== */
+
 /* Section Title */
 .all-section-title {
   font-size: 2.2rem;
   position: relative;
   display: inline-block;
   padding-bottom: 12px;
+  margin: 0;
   color: #092a4b;
   letter-spacing: -0.5px;
-  text-align: justify;
-  text-wrap: balance; /* Prevents uneven title wrapping */
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .all-section-title::after {
@@ -737,206 +744,408 @@ body {
   position: absolute;
   width: 60px;
   height: 4px;
-  background: #5e81ff;
+  background: linear-gradient(90deg, #5e81ff, #3ddc97);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 4px;
 }
 
-/* Card Container Base with Glass Accent */
+
+/* ==========================================================================
+   CARD
+   ========================================================================== */
+
 .about-card {
-  background: #ffffff;
-  border-radius: 20px;
-  border: 1px solid rgba(9, 42, 75, 0.08);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  transition:
-    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(9, 42, 75, 0.08);
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s ease;
 }
 
 .about-card::before {
   content: "";
+
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #5e81ff, #3ddc97);
+
+  background: linear-gradient(
+    90deg,
+    #5e81ff,
+    #3ddc97
+  );
+
   opacity: 0;
+
   transition: opacity 0.3s ease;
 }
 
 .about-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(9, 42, 75, 0.09);
+
+  border-color: rgba(94, 129, 255, 0.16);
+
+  box-shadow:
+    0 18px 40px rgba(9, 42, 75, 0.09);
 }
 
 .about-card:hover::before {
   opacity: 1;
 }
 
-/* Subtitle & Headings */
+
+/* ==========================================================================
+   PROFESSIONAL BADGE
+   ========================================================================== */
+
 .sub-badge {
-  display: inline-block;
-  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 0.78rem;
   font-weight: 700;
+
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.15px;
+
   color: #5e81ff;
-  background: rgba(94, 129, 255, 0.1);
-  padding: 5px 14px;
+
+  background: rgba(94, 129, 255, 0.10);
+
+  padding: 6px 14px;
+
+  border: 1px solid rgba(94, 129, 255, 0.08);
   border-radius: 30px;
 }
 
+
+/* ==========================================================================
+   ABOUT HEADING
+   ========================================================================== */
+
 .about-heading {
+  max-width: 680px;
+
   font-size: 1.55rem;
   font-weight: 700;
+
   color: #092a4b;
-  line-height: 1.35;
-  text-wrap: balance; /* Creates even heading breaks */
+
+  line-height: 1.38;
+  letter-spacing: -0.35px;
+
+  text-wrap: balance;
 }
 
-/* Paragraph Typography & Text-Wrap Fixes */
+
+/* ==========================================================================
+   BODY COPY
+   ========================================================================== */
+
 .lead-text {
-  font-size: 1.08rem;
+  font-size: 1.06rem;
+  font-weight: 400;
+
   color: #2c3e50;
-  line-height: 1.7;
-  text-align: justify;
-  text-wrap: pretty; /* 🔥 Modern CSS: Eliminates awkward right gaps and orphans */
+
+  line-height: 1.72;
+
+  text-align: left;
+  text-wrap: pretty;
+}
+
+.lead-text strong {
+  color: #092a4b;
+  font-weight: 700;
 }
 
 .body-text {
-  font-size: 0.98rem;
+  font-size: 0.97rem;
+
   color: #475569;
-  line-height: 1.68;
-  text-align: justify;
-  text-wrap: pretty; /* 🔥 Keeps text line endings visually balanced */
+
+  line-height: 1.72;
+
+  text-align: left;
+  text-wrap: pretty;
 }
 
-/* Feature Focus List */
+
+/* ==========================================================================
+   ENGINEERING FOCUS
+   ========================================================================== */
+
 .focus-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 11px;
 }
 
 .focus-item {
   display: flex;
   align-items: flex-start;
+
   gap: 12px;
-  font-size: 0.93rem;
+
+  font-size: 0.91rem;
+  line-height: 1.58;
+
   color: #334155;
+
   background: #f8fafc;
-  padding: 10px 14px;
+
+  padding: 11px 14px;
+
+  border: 1px solid rgba(9, 42, 75, 0.045);
   border-radius: 10px;
-  border: 1px solid rgba(9, 42, 75, 0.04);
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.focus-item:hover {
+  background: #f4f7fb;
+
+  border-color: rgba(94, 129, 255, 0.13);
+
+  transform: translateX(2px);
+}
+
+.focus-item strong {
+  color: #092a4b;
+  font-weight: 700;
 }
 
 .focus-icon {
-  font-size: 1.1rem;
+  flex: 0 0 auto;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  font-size: 1rem;
   line-height: 1;
+
+  margin-top: 1px;
 }
 
-/* Tech Stack Tags */
+
+/* ==========================================================================
+   TECH STACK
+   ========================================================================== */
+
 .tech-stack-wrapper {
   display: flex;
   flex-wrap: wrap;
+
   gap: 8px;
 }
 
 .tech-tag {
-  font-size: 0.82rem;
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 0.79rem;
   font-weight: 600;
+
   color: #092a4b;
+
   background: #f0f4f8;
-  padding: 6px 14px;
-  border-radius: 8px;
+
+  padding: 6px 12px;
+
   border: 1px solid rgba(9, 42, 75, 0.06);
-  transition: all 0.25s ease;
-  text-align: justify;
+  border-radius: 8px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .tech-tag:hover {
-  background: #092a4b;
   color: #ffffff;
+
+  background: #092a4b;
+
+  border-color: #092a4b;
+
   transform: translateY(-2px);
 }
 
-/* Stats Dashboard (Right Column) */
+
+/* ==========================================================================
+   PROBLEM SOLVING CARD
+   ========================================================================== */
+
 .stats-card {
-  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #f8fafc 100%
+    );
 }
 
+
+/* Card Heading */
 .card-title {
   color: #092a4b;
-  font-size: 1.25rem;
+
+  font-size: 1.24rem;
+  line-height: 1.3;
 }
 
+
+/* Total Solved Badge */
 .total-solved-badge {
-  font-size: 0.82rem;
+  display: inline-flex;
+  align-items: center;
+
+  white-space: nowrap;
+
+  font-size: 0.79rem;
   font-weight: 700;
+
   color: #10b981;
+
   background: rgba(16, 185, 129, 0.12);
-  padding: 4px 12px;
+
+  padding: 5px 11px;
+
+  border: 1px solid rgba(16, 185, 129, 0.08);
   border-radius: 20px;
 }
 
+
+/* Description */
 .stats-desc {
-  font-size: 0.93rem;
+  font-size: 0.91rem;
+
   color: #64748b;
-  line-height: 1.55;
+
+  line-height: 1.62;
+
+  text-align: left;
   text-wrap: pretty;
-  text-align: justify;
 }
 
-/* Metric Box Cards */
+
+/* ==========================================================================
+   METRIC BOX
+   ========================================================================== */
+
 .metric-box {
-  background: #ffffff;
-  padding: 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(9, 42, 75, 0.08);
+  min-height: 108px;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   gap: 2px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+
+  background: #ffffff;
+
+  padding: 15px;
+
+  border: 1px solid rgba(9, 42, 75, 0.08);
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.02);
+
   transition:
     border-color 0.25s ease,
     transform 0.25s ease,
     box-shadow 0.25s ease;
-  text-align: justify;
 }
 
 .metric-box:hover {
-  border-color: #5e81ff;
+  border-color: rgba(94, 129, 255, 0.55);
+
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(94, 129, 255, 0.12);
+
+  box-shadow:
+    0 8px 20px rgba(94, 129, 255, 0.12);
 }
 
+
+/* Number */
 .metric-num {
-  font-size: 1.35rem;
+  font-size: 1.32rem;
   font-weight: 800;
+
   color: #092a4b;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.3px;
 }
 
+
+/* Platform */
 .metric-platform {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 600;
+
   color: #334155;
+
+  line-height: 1.3;
 }
 
+
+/* Meta */
 .metric-meta {
-  font-size: 0.75rem;
+  font-size: 0.73rem;
+
   color: #64748b;
+
+  line-height: 1.35;
 }
+
 
 /* ==========================================================================
-   Animations & Keyframes
+   FOOTER NOTE
    ========================================================================== */
+
+.about-footer {
+  border-color: rgba(9, 42, 75, 0.08) !important;
+}
+
+.about-footer p {
+  line-height: 1.55;
+}
+
+
+/* ==========================================================================
+   SCROLL ANIMATION
+   ========================================================================== */
+
 .animate-on-scroll {
-  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation:
+    fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+    forwards;
 }
 
 .animate-on-scroll.delay-1 {
@@ -948,28 +1157,97 @@ body {
     opacity: 0;
     transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Responsive Styles */
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
 @media (max-width: 991.98px) {
+
   .about-card {
     padding: 24px !important;
   }
+
   .about-heading {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
+  }
+
+  .lead-text {
+    font-size: 1rem;
   }
 }
 
+
 @media (max-width: 576px) {
+
   .all-section-title {
     font-size: 1.8rem;
   }
+
+  .about-heading {
+    font-size: 1.3rem;
+  }
+
+  .lead-text {
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .body-text {
+    font-size: 0.94rem;
+  }
+
+  .focus-item {
+    font-size: 0.88rem;
+    padding: 10px 12px;
+  }
+
+  .metric-box {
+    min-height: 100px;
+    padding: 13px;
+  }
+
   .metric-num {
     font-size: 1.15rem;
+  }
+
+  .metric-platform {
+    font-size: 0.82rem;
+  }
+
+  .metric-meta {
+    font-size: 0.7rem;
+  }
+
+  .total-solved-badge {
+    font-size: 0.72rem;
+    padding: 4px 8px;
+  }
+}
+
+
+/* ==========================================================================
+   ACCESSIBILITY — REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-on-scroll {
+    animation: none;
+  }
+
+  .about-card,
+  .focus-item,
+  .tech-tag,
+  .metric-box {
+    transition: none;
   }
 }
 
