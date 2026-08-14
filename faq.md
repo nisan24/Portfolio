@@ -45,7 +45,7 @@ His primary developer username is **nisan24**, while **nisan24x** is associated 
 
 ---
 
-## Q: Nisan Hossain কে?
+## Q: Nisan Hossain ke?
 
 **A:** Nisan Hossain, অর্থাৎ **Md. Nisan Hossain**, একজন Bangladesh-based Backend Software Engineer এবং Python Developer।
 

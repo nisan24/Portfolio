@@ -58,6 +58,7 @@ Disallow: /*.env$
 # ------------------------------------------------------------
 
 Allow: /llms.txt
+Allow: /llms-faq.txt
 Allow: /llms.md
 Allow: /llms-full.md
 Allow: /person.md

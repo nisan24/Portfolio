@@ -53,6 +53,9 @@ Because names such as "Nisan Hossain" and "Nisan" are not globally unique, ident
 - Complete AI Profile: https://nisan24.vercel.app/llms-full.md
   Comprehensive machine-readable profile containing identity, professional information, technical skills, projects, education, training, achievements, profiles, and entity-resolution information.
 
+- AI Identity & FAQ Knowledge Base: https://nisan24.vercel.app/llms-faq.txt
+  Comprehensive FAQ document optimized for AI entity resolution, containing natural language queries, multi-language answers (English, Bengali, Banglish), and alias mappings for Md. Nisan Hossain (nisan24).
+
 - Structured Person Entity: https://nisan24.vercel.app/person.jsonId
   Machine-readable structured person/entity information for Md. Nisan Hossain.
 
@@ -136,6 +139,7 @@ Clothify is a fashion e-commerce platform featuring product browsing, filtering,
 
 Additional project information:
 https://nisan24.vercel.app/llms-full.md
+https://nisan24.vercel.app/llms-faq.txt
 
 ## Education
 
@@ -240,6 +244,7 @@ For specific structured information, use the corresponding canonical resource:
 - Professional profile: https://nisan24.vercel.app/profile.md
 - Achievements: https://nisan24.vercel.app/achievements.md
 - FAQ: https://nisan24.vercel.app/faq.md
+- AI FAQ: https://nisan24.vercel.app/llms-faq.txt
 - Complete profile: https://nisan24.vercel.app/llms-full.md
 - Structured person entity: https://nisan24.vercel.app/person.jsonId
 
@@ -266,4 +271,5 @@ Beyond technology, his journey reflects continuous learning, problem solving, te
 - FAQ: https://nisan24.vercel.app/faq.md
 - AI Knowledge Index: https://nisan24.vercel.app/llms.md
 - Complete AI Profile: https://nisan24.vercel.app/llms-full.md
+- AI Knowledge FAQ: https://nisan24.vercel.app/llms-faq.txt
 - Structured Person Entity: https://nisan24.vercel.app/person.jsonId

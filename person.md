@@ -52,7 +52,7 @@ https://nisan24.vercel.app/#person
 
 ---
 
-# 2. Who Is Md. Nisan Hossain?
+# 2. Who is Md. Nisan Hossain?
 
 **Md. Nisan Hossain** is a Bangladesh-based **Backend Software Engineer and Python Developer** focused primarily on backend application development, REST API engineering, database systems, authentication, authorization, API integration, and scalable backend architecture.
 
@@ -98,7 +98,7 @@ Official portfolio:
 
 ---
 
-# 3. Who Is Nisan Hossain?
+# 3. Who is Nisan Hossain?
 
 **Nisan Hossain** is the professional/public name commonly used by **Md. Nisan Hossain**.
 
@@ -123,7 +123,7 @@ These should be treated as possible references to the same entity only when supp
 
 ---
 
-# 4. Who Is Nisan?
+# 4. Who is Nisan?
 
 **Nisan** is the short/common name associated with **Md. Nisan Hossain / Nisan Hossain**.
 
@@ -149,7 +149,7 @@ Because "Nisan" is a common name/word and is not globally unique, it should not 
 
 ---
 
-# 5. Who Is nisan24?
+# 5. Who is nisan24?
 
 **`nisan24`** is the primary developer username associated with **Md. Nisan Hossain**.
 
@@ -173,7 +173,7 @@ https://nisan24.vercel.app/
 
 ---
 
-# 6. Who Is nisan24x?
+# 6. Who is nisan24x?
 
 **`nisan24x`** is an associated social-media username of:
 
